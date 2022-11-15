@@ -1,7 +1,6 @@
 import * as C from './styles';
 import { Item } from '../../types/Item';
-
-//sempre que receber uma props de componente PRECISA TYPAR
+import { TableItem } from '../TableItem';
 
 type Props = {
     list: Item[]
@@ -12,23 +11,18 @@ export const TableArea = ({ list }: Props) => {
         <C.Table>
             <thead>
                 <tr>
-                    <C.TableHeadColumn width={100}> Data </C.TableHeadColumn>
+                    <C.TableHeadColumn width={100}>Data</C.TableHeadColumn>
                     <C.TableHeadColumn width={130}>Categoria</C.TableHeadColumn>
-                    <C.TableHeadColumn>Titulo</C.TableHeadColumn>
+                    <C.TableHeadColumn>Título</C.TableHeadColumn>
                     <C.TableHeadColumn width={150}>Valor</C.TableHeadColumn>
                 </tr>
             </thead>
-
             <tbody>
+                hello
                 {list.map((item, index) => (
-                    <tr key={index}>
-                        <td>{item.title}</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <TableItem key={index} item={item} />
                 ))}
             </tbody>
-
         </C.Table>
-    )
+    );
 }

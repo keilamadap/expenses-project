@@ -2,16 +2,15 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import * as C from './App.styles'
 import { Item } from './types/Item'
-import { Category } from './types/Category'
-import { catogories } from './data/category'
 import { items } from './data/items'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
 import { TableArea } from './components/TableArea'
 
 function App() {
   const [list, setList] = useState(items); //minha lista geral
-  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [filteredList, setFilteredList] = useState<Item[]>([]);
+  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
+
 
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
@@ -19,25 +18,16 @@ function App() {
 
   return (
     <C.Container>
-
       <C.Header>
-        <C.HeaderText>
-          Financial App
-        </C.HeaderText>
-
+        <C.HeaderText>Sistema Financeiro</C.HeaderText>
       </C.Header>
-
       <C.Body>
 
-        {/* area de info */}
-
-        {/* area de insercao */}
+        {/* area para inserir dados */}
 
         <TableArea list={filteredList} />
-
       </C.Body>
     </C.Container>
-
   );
 }
 
