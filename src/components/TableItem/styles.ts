@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const TableLine = styled.tr``;
+export const TableLine = styled.tr`
+    margin-left: 2rem;
+`;
 
 export const TableColumn = styled.td`
-    padding: 10px 0;
+    padding: 10px 70px;
 `;
 
 export const Category = styled.div<{ color: string }>`
@@ -15,5 +17,5 @@ export const Category = styled.div<{ color: string }>`
 `;
 
 export const Value = styled.div<{ color: string }>`
-    color: ${props => props.color};
+    color: ${props => props.color};    
 `;

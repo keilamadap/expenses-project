@@ -5,16 +5,17 @@ import { Item } from './types/Item'
 import { items } from './data/items'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
 import { TableArea } from './components/TableArea'
+import { InfoArea } from './components/InfoArea'
 
 function App() {
   const [list, setList] = useState(items); //minha lista geral
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
-
+  console.log(filteredList)
 
   useEffect(() => {
-    setFilteredList(filterListByMonth(list, currentMonth));
-  }, [list, currentMonth]); //sempre que a lista ou o mes mudar a pagina eh renderizada dnv
+    setFilteredList(filterListByMonth(items, currentMonth));
+  }, [items, currentMonth]); //sempre que a lista ou o mes mudar a pagina eh renderizada dnv
 
   return (
     <C.Container>
@@ -23,9 +24,9 @@ function App() {
       </C.Header>
       <C.Body>
 
-        {/* area para inserir dados */}
+        <InfoArea currentMonth={currentMonth} />
 
-        <TableArea list={filteredList} />
+        <TableArea list={items} />
       </C.Body>
     </C.Container>
   );

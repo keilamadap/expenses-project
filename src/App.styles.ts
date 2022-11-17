@@ -15,7 +15,7 @@ export const HeaderText = styled.h1`
     margin: 0;
     padding: 0;
     color: #47a6f0;
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-align: center;
        
 `;
