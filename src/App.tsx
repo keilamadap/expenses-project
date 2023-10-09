@@ -1,21 +1,25 @@
-import { useState, useEffect } from 'react';
-import React from 'react';
-import * as C from './App.styles'
-import { Item } from './types/Item'
-import { items } from './data/items'
-import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
-import { TableArea } from './components/TableArea'
-import { InfoArea } from './components/InfoArea'
+import { useState, useEffect } from "react";
+import React from "react";
+import * as C from "./App.styles";
+import { Item } from "./types/Item";
+import { items } from "./data/items";
+import { getCurrentMonth, filterListByMonth } from "./helpers/dateFilter";
+import { TableArea } from "./components/TableArea";
+import { InfoArea } from "./components/InfoArea";
 
 function App() {
   const [list, setList] = useState(items); //minha lista geral
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
-  console.log(filteredList)
+  console.log(filteredList);
 
   useEffect(() => {
     setFilteredList(filterListByMonth(items, currentMonth));
   }, [items, currentMonth]); //sempre que a lista ou o mes mudar a pagina eh renderizada dnv
+
+  const handleMonthChange = (newMonth: string) => {
+    setCurrentMonth(newMonth);
+  };
 
   return (
     <C.Container>
@@ -23,8 +27,10 @@ function App() {
         <C.HeaderText>Sistema Financeiro</C.HeaderText>
       </C.Header>
       <C.Body>
-
-        <InfoArea currentMonth={currentMonth} />
+        <InfoArea
+          currentMonth={currentMonth}
+          onMonthChange={handleMonthChange}
+        />
 
         <TableArea list={items} />
       </C.Body>
