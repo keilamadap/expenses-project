@@ -18,6 +18,7 @@ export const MonthArea = styled.div`
 
 export const MonthArrow = styled.div`
   width: 40px;
+  color: #ff6347;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
