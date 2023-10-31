@@ -29,7 +29,7 @@ git clone  https://github.com/keilamadap/expenses-project.git
 2. Entre no diretorio
 
 ```shell
-cd dropmail
+cd expenses-project
 ```
 
 3. Instale as dependências usando (yarn) ou (npm)
