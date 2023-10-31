@@ -5,7 +5,7 @@
 
 ## Demonstração do Projeto <span id="demonstracao"/>
 
-<a id="demonstracao" rel="nofollow noreferrer noopener" href="https://lnkd.in/dja7wW5N"  target="_blank"> Acesse o projeto clicando aqui </a>
+<a id="demonstracao" rel="nofollow noreferrer noopener" href="https://keilamadap.github.io/expenses-project/"  target="_blank"> Acesse o projeto clicando aqui </a>
 
 
 ## Tecnologias Utilizadas: <span id="tecnologias" />
