@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+## Expenses Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto <span id="descricao" />
 
-## Available Scripts
+<p>Neste sistema, você pode facilmente adicionar suas despesas e receitas. O sistema fará automaticamente o cálculo subtraindo as despesas do valor total das receitas e exibirá o saldo resultante na tela, destacando-o em vermelho se for negativo e em verde se for positivo. 
+</p>
 
-In the project directory, you can run:
+## Demonstração do Projeto <span id="demonstracao"/>
 
-### `npm start`
+<a id="demonstracao" rel="nofollow noreferrer noopener" href="https://lnkd.in/dja7wW5N"  target="_blank"> Acesse o projeto clicando aqui </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tecnologias Utilizadas: <span id="tecnologias" />
 
-### `npm test`
+- Javascript
+- ReactJS
+- TypeScript
+- Eslint
+- Prettier
+- Git
+- Styled-Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como rodar o projeto? <span id="comousar" />
 
-### `npm run build`
+1. Clone o repositorio git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+git clone  https://github.com/keilamadap/expenses-project.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Entre no diretorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+cd dropmail
+```
 
-### `npm run eject`
+3. Instale as dependências usando (yarn) ou (npm)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+yarn install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ou
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```shell
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Rode o projeto após instalar as dependências
 
-## Learn More
+```shell
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ou
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+npm run start
+```
