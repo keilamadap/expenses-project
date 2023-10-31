@@ -1,5 +1,3 @@
-## Expenses Project
-
 ## Descrição do Projeto <span id="descricao" />
 
 <p>Neste sistema, você pode facilmente adicionar suas despesas e receitas. O sistema fará automaticamente o cálculo subtraindo as despesas do valor total das receitas e exibirá o saldo resultante na tela, destacando-o em vermelho se for negativo e em verde se for positivo. 
