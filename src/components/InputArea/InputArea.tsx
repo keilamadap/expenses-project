@@ -15,6 +15,7 @@ export const InputArea = ({ onAdd }: Props) => {
   const [valueField, setValueField] = useState(0);
 
   let categoryKeys: string[] = Object.keys(categories);
+  let keila;
 
   const handleAddEvent = () => {
     let errors: string[] = [];
